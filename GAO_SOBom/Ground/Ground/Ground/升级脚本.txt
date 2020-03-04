@@ -1,0 +1,2 @@
+﻿--2020-01-08 
+ ALTER TABLE TbrSystem.dbo.Comp ADD Id BIGINT IDENTITY; 

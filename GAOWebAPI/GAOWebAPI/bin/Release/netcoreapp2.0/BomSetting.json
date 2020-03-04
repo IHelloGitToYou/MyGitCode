@@ -1,0 +1,60 @@
+﻿{
+  "主数据库连接": "Data Source=127.0.0.1;database=TbrSystem;uid=sa;pwd=sa123;", //
+  "帐套数据库连接格式": "Data Source=127.0.0.1;database=DB_{0};uid=sa;pwd=sa123;", //{0} 用于切换帐号不要去掉
+
+  ////以下一般不需要更改，除非有更细微的调整
+  "层级类型": "带点号", //或 纯数字
+  "ERP系统": "T8", //或 "SUNLIKE"
+  "货号存在多BOM": "报错", //"取最新" 或 "报错"
+  "T8默认值": {
+    "BOM表头": {
+      "VALID_DD": "当前日期",
+      "USR": "登录人",
+      "CHK_MAN": "登录人",
+      "PRT_SW": "",
+
+      "CLS_DATE": "当前日期",
+      "RECORD_DD": "当前日期",
+      "EFF_DD": "当前日期",
+      "UPD_DD": "当前日期",
+      "CREATE_DD": "当前日期",
+      "UPD_USR": "登录人",
+      "SPC": "",
+      "PRD_MARK": ",",
+      "PF_NO": "",
+      "QTY1": "0",
+      "WH_NO": "0000"
+    },
+    "BOM表身": {
+      "CST": "0",
+      "QTY_BAS": "1",
+      "UP_CST": "0",
+      "CHG_DD": "当前日期",
+      "EFF_DD": "当前时间",
+      "UNIT": "1",
+      "QTY1": "0",
+      "WH_NO": "0000"
+    },
+    "货号资料": {
+      "DFU_UT": "1",
+      "SPC_TAX": "17",
+      "CHK_BAT": "F",
+      "WH": "0000",
+      "CHK_NUM": "F",
+      "CHK_TAX": "F",
+      "DEP": "0000",
+      "PRD_DD": "当前日期",
+      "LOCK_STOCK_QTY": "F",
+      "EFF_DD": "当前日期",
+      "USR": "登录人",
+      "CHK_MAN": "登录人",
+      "CLS_DATE": "当前日期",
+      "CHK_MARK": "T",
+      "RECORD_DD": "当前日期"
+    }
+  },
+  "SUNLIKE默认值": {
+    "BOM表头": {},
+    "BOM表身": {}
+  }
+}

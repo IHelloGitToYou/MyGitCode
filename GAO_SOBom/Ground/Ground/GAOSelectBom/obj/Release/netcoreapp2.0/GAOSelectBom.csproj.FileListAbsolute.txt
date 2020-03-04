@@ -1,0 +1,12 @@
+E:\产品开发New\Ground\Ground\GAOSelectBom\bin\Release\netcoreapp2.0\GAOSelectBom.deps.json
+E:\产品开发New\Ground\Ground\GAOSelectBom\bin\Release\netcoreapp2.0\GAOSelectBom.dll
+E:\产品开发New\Ground\Ground\GAOSelectBom\bin\Release\netcoreapp2.0\GAOSelectBom.pdb
+E:\产品开发New\Ground\Ground\GAOSelectBom\bin\Release\netcoreapp2.0\GaoCore.dll
+E:\产品开发New\Ground\Ground\GAOSelectBom\bin\Release\netcoreapp2.0\GaoCore.pdb
+E:\产品开发New\Ground\Ground\GAOSelectBom\obj\Release\netcoreapp2.0\GAOSelectBom.csprojAssemblyReference.cache
+E:\产品开发New\Ground\Ground\GAOSelectBom\obj\Release\netcoreapp2.0\GAOSelectBom.csproj.CoreCompileInputs.cache
+E:\产品开发New\Ground\Ground\GAOSelectBom\obj\Release\netcoreapp2.0\GAOSelectBom.AssemblyInfoInputs.cache
+E:\产品开发New\Ground\Ground\GAOSelectBom\obj\Release\netcoreapp2.0\GAOSelectBom.AssemblyInfo.cs
+E:\产品开发New\Ground\Ground\GAOSelectBom\obj\Release\netcoreapp2.0\GAOSelectBom.csproj.CopyComplete
+E:\产品开发New\Ground\Ground\GAOSelectBom\obj\Release\netcoreapp2.0\GAOSelectBom.dll
+E:\产品开发New\Ground\Ground\GAOSelectBom\obj\Release\netcoreapp2.0\GAOSelectBom.pdb

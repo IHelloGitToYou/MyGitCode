@@ -1,0 +1,8 @@
+{
+  "ConnectionStrings": {
+    "CORE": "Data Source=127.0.0.1;database=TbrSystem;uid=sa;pwd=sa123;" //
+  },
+  "ExtjsGeneratePath": "E:\\产品开发New\\ExtGAO\\app\\model\\",
+  "ERP系统": "T8", //或 "SUNLIKE"
+  "帐套数据库连接格式": "Data Source=127.0.0.1;database=DB_{0};uid=sa;pwd=sa123;" //{0} 用于切换帐号不要去掉
+}

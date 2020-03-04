@@ -1,0 +1,254 @@
+{
+  "format": 1,
+  "restore": {
+    "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\Ground\\Ground.csproj": {}
+  },
+  "projects": {
+    "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\GaoCore\\GaoCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\GaoCore\\GaoCore.csproj",
+        "projectName": "GaoCore",
+        "projectPath": "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\GaoCore\\GaoCore.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\GaoCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            },
+            "sqlSugarCore": {
+              "target": "Package",
+              "version": "[5.0.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\GAOSelectBom\\GAOSelectBom.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\GAOSelectBom\\GAOSelectBom.csproj",
+        "projectName": "GAOSelectBom",
+        "projectPath": "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\GAOSelectBom\\GAOSelectBom.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\GAOSelectBom\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "projectReferences": {
+              "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\GaoCore\\GaoCore.csproj": {
+                "projectPath": "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\GaoCore\\GaoCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\Gao\\Gao.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\Gao\\Gao.csproj",
+        "projectName": "Gao",
+        "projectPath": "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\Gao\\Gao.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\Gao\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "projectReferences": {
+              "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\GaoCore\\GaoCore.csproj": {
+                "projectPath": "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\GaoCore\\GaoCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\Ground\\Ground.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\Ground\\Ground.csproj",
+        "projectName": "Ground",
+        "projectPath": "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\Ground\\Ground.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\Ground\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "projectReferences": {
+              "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\GaoCore\\GaoCore.csproj": {
+                "projectPath": "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\GaoCore\\GaoCore.csproj"
+              },
+              "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\GAOSelectBom\\GAOSelectBom.csproj": {
+                "projectPath": "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\GAOSelectBom\\GAOSelectBom.csproj"
+              },
+              "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\Gao\\Gao.csproj": {
+                "projectPath": "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\Ground\\Ground\\Gao\\Gao.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.All": {
+              "target": "Package",
+              "version": "[2.0.9, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

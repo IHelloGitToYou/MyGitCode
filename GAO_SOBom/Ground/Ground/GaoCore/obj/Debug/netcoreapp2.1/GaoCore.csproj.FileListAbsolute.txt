@@ -1,0 +1,6 @@
+E:\产品开发New\Ground\Ground\GaoCore\bin\Debug\netcoreapp2.1\GaoCore.deps.json
+E:\产品开发New\Ground\Ground\GaoCore\bin\Debug\netcoreapp2.1\GaoCore.dll
+E:\产品开发New\Ground\Ground\GaoCore\obj\Debug\netcoreapp2.1\GaoCore.csprojAssemblyReference.cache
+E:\产品开发New\Ground\Ground\GaoCore\obj\Debug\netcoreapp2.1\GaoCore.csproj.CoreCompileInputs.cache
+E:\产品开发New\Ground\Ground\GaoCore\obj\Debug\netcoreapp2.1\GaoCore.AssemblyInfoInputs.cache
+E:\产品开发New\Ground\Ground\GaoCore\obj\Debug\netcoreapp2.1\GaoCore.AssemblyInfo.cs

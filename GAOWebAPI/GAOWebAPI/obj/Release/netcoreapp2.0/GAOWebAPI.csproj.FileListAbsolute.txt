@@ -1,0 +1,12 @@
+H:\WorkerSln\GAOBomAPI\GAOWebAPI\GAOWebAPI\GAOWebAPI\bin\Release\netcoreapp2.0\BomSetting.json
+H:\WorkerSln\GAOBomAPI\GAOWebAPI\GAOWebAPI\GAOWebAPI\bin\Release\netcoreapp2.0\GAOWebAPI.deps.json
+H:\WorkerSln\GAOBomAPI\GAOWebAPI\GAOWebAPI\GAOWebAPI\bin\Release\netcoreapp2.0\GAOWebAPI.runtimeconfig.json
+H:\WorkerSln\GAOBomAPI\GAOWebAPI\GAOWebAPI\GAOWebAPI\bin\Release\netcoreapp2.0\GAOWebAPI.runtimeconfig.dev.json
+H:\WorkerSln\GAOBomAPI\GAOWebAPI\GAOWebAPI\GAOWebAPI\bin\Release\netcoreapp2.0\GAOWebAPI.dll
+H:\WorkerSln\GAOBomAPI\GAOWebAPI\GAOWebAPI\GAOWebAPI\bin\Release\netcoreapp2.0\GAOWebAPI.pdb
+H:\WorkerSln\GAOBomAPI\GAOWebAPI\GAOWebAPI\GAOWebAPI\obj\Release\netcoreapp2.0\GAOWebAPI.csprojAssemblyReference.cache
+H:\WorkerSln\GAOBomAPI\GAOWebAPI\GAOWebAPI\GAOWebAPI\obj\Release\netcoreapp2.0\GAOWebAPI.csproj.CoreCompileInputs.cache
+H:\WorkerSln\GAOBomAPI\GAOWebAPI\GAOWebAPI\GAOWebAPI\obj\Release\netcoreapp2.0\GAOWebAPI.AssemblyInfoInputs.cache
+H:\WorkerSln\GAOBomAPI\GAOWebAPI\GAOWebAPI\GAOWebAPI\obj\Release\netcoreapp2.0\GAOWebAPI.AssemblyInfo.cs
+H:\WorkerSln\GAOBomAPI\GAOWebAPI\GAOWebAPI\GAOWebAPI\obj\Release\netcoreapp2.0\GAOWebAPI.dll
+H:\WorkerSln\GAOBomAPI\GAOWebAPI\GAOWebAPI\GAOWebAPI\obj\Release\netcoreapp2.0\GAOWebAPI.pdb

@@ -1,0 +1,4 @@
+E:\产品开发New\Ground\Ground\Gao\obj\Debug\netcoreapp2.1\Gao.csprojAssemblyReference.cache
+E:\产品开发New\Ground\Ground\Gao\obj\Debug\netcoreapp2.1\Gao.csproj.CoreCompileInputs.cache
+E:\产品开发New\Ground\Ground\Gao\obj\Debug\netcoreapp2.1\Gao.AssemblyInfoInputs.cache
+E:\产品开发New\Ground\Ground\Gao\obj\Debug\netcoreapp2.1\Gao.AssemblyInfo.cs

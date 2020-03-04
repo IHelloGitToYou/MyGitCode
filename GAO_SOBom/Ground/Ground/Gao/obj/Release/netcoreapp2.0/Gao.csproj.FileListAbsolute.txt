@@ -1,0 +1,12 @@
+E:\产品开发New\Ground\Ground\Gao\bin\Release\netcoreapp2.0\Gao.deps.json
+E:\产品开发New\Ground\Ground\Gao\bin\Release\netcoreapp2.0\Gao.dll
+E:\产品开发New\Ground\Ground\Gao\bin\Release\netcoreapp2.0\Gao.pdb
+E:\产品开发New\Ground\Ground\Gao\bin\Release\netcoreapp2.0\GaoCore.dll
+E:\产品开发New\Ground\Ground\Gao\bin\Release\netcoreapp2.0\GaoCore.pdb
+E:\产品开发New\Ground\Ground\Gao\obj\Release\netcoreapp2.0\Gao.csprojAssemblyReference.cache
+E:\产品开发New\Ground\Ground\Gao\obj\Release\netcoreapp2.0\Gao.csproj.CoreCompileInputs.cache
+E:\产品开发New\Ground\Ground\Gao\obj\Release\netcoreapp2.0\Gao.AssemblyInfoInputs.cache
+E:\产品开发New\Ground\Ground\Gao\obj\Release\netcoreapp2.0\Gao.AssemblyInfo.cs
+E:\产品开发New\Ground\Ground\Gao\obj\Release\netcoreapp2.0\Gao.csproj.CopyComplete
+E:\产品开发New\Ground\Ground\Gao\obj\Release\netcoreapp2.0\Gao.dll
+E:\产品开发New\Ground\Ground\Gao\obj\Release\netcoreapp2.0\Gao.pdb

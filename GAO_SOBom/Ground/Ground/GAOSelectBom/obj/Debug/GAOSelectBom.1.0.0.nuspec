@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>GAOSelectBom</id>
+    <version>1.0.0</version>
+    <authors>GAOSelectBom</authors>
+    <owners>GAOSelectBom</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp2.0">
+        <dependency id="GaoCore" version="1.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="E:\产品开发New\Ground\Ground\GAOSelectBom\bin\Debug\netcoreapp2.0\GAOSelectBom.dll" target="lib\netcoreapp2.0\GAOSelectBom.dll" />
+  </files>
+</package>
