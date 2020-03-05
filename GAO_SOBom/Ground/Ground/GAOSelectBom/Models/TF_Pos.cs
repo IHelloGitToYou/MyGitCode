@@ -53,6 +53,7 @@ namespace GAOSelectBom.Models
 
         [Label("储位")]
         [Require]
+        [IsCombobox("NAME", "WH_LOC", "WL", "PRD_LOC")]
         public string PRD_LOC { get; set; } = "";
 
         [Label("单位")]

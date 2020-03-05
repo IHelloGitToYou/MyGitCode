@@ -109,13 +109,14 @@ namespace Ground.Controllers
         }
 
         [HttpGet]
-        public ApiQueryDataResponse SearchWHLoc(string query, int? page, int? limit)
+        public ApiQueryDataResponse SearchWHLoc(string query, string WH, int? page, int? limit)
         {
             var db = Entity.GetDb(GetDB_ON_X_LOGIN_ID());
             var q = db.Queryable<WHLocation>();
             if (query.IsNotEmpty())
                 q.Where(o => o.PRD_LOC.Contains(query) || o.NAME.Contains(query));
-
+            if (WH.IsNotEmpty())
+                q.Where(o => o.WH == WH);
             var result = new ApiQueryDataResponse();
             if (page != null)
                 result.items = q.ToPageList(page.Value, limit.Value);

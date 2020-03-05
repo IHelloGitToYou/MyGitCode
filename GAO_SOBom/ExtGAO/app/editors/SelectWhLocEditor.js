@@ -17,7 +17,21 @@
         autoLoad: true
     },
     pageSize: 10,
-    queryMode: 'local',
+    queryMode: 'remote',
     displayField: 'NAME',
-    valueField: 'PRD_LOC'
+    valueField: 'PRD_LOC',
+    beforeQuery(queryPlan) {
+        var me = this,
+            proxy = me.store.getProxy(),
+            wh = me.ownerCt.grid.getSelection()[0].get('WH');
+        //console.log('whhhhh');
+        if (!wh) {
+            queryPlan.cancel = true;
+            return queryPlan;
+        }
+
+        proxy.setExtraParam("WH", wh);
+ 
+        return me.callParent([queryPlan]);//base.beforeQuery(queryPlan);
+    }
 });
