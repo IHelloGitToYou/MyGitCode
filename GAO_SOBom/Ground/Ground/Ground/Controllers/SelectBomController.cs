@@ -22,10 +22,13 @@ namespace Ground.Controllers
         public ApiQueryDataResponse SearchPrdt(string query, int? page, int? limit)
         {
             var db = Entity.GetDb(GetDB_ON_X_LOGIN_ID());
-            var q = db.SqlQueryable<Prdt>(@"select t.id, t.Prd_No, t.Name, T.snm, T.Spc, 
+            var q = db.SqlQueryable<Prdt>(@"select t.id, t.Prd_No, t.Name, T.snm, T.Spc,  
+                                    T.Wh,W.name as WhName, 
+                                    T.Prd_Loc,
                                     -1 CreateId, t.Record_dd CreateDD,
                                     -1 UpdateId, t.Record_dd UpdateDD
-                                    from Prdt t");
+                                    from Prdt t
+                                    left join My_WH w on w.wh = T.wh");
             if (query.IsNotEmpty())
                 q.Where(o => o.Prd_No.Contains(query) || o.Name.Contains(query) || o.Spc.Contains(query));
 
@@ -43,12 +46,15 @@ namespace Ground.Controllers
         public ApiQueryDataResponse SearchCust(string query, int? page, int? limit)
         {
             var db = Entity.GetDb(GetDB_ON_X_LOGIN_ID());
-            var q = db.SqlQueryable<Cust>(@"select row_number() over( order by cus_no) Id ,t.CUS_NO, t.NAME, T.SNM,
+            var q = db.SqlQueryable<Cust>(@"select row_number() over( order by cus_no) Id ,
+                                    t.CUS_NO, t.NAME, T.SNM, T.OBJ_ID, T.ID1_TAX , T.CLS2 ,
                                     -1 CreateId, t.create_dd CreateDD,
                                     -1 UpdateId, t.eff_dd UpdateDD
                                     from Cust t");
             if (query.IsNotEmpty())
                 q.Where(o => o.CUS_NO.Contains(query) || o.NAME.Contains(query) || o.SNM.Contains(query));
+
+            q.In(it => it.OBJ_ID, new string[] { "1", "3" });
 
             var result = new ApiQueryDataResponse();
             if (page != null)
@@ -102,12 +108,33 @@ namespace Ground.Controllers
             return result;
         }
 
+        [HttpGet]
+        public ApiQueryDataResponse SearchWHLoc(string query, int? page, int? limit)
+        {
+            var db = Entity.GetDb(GetDB_ON_X_LOGIN_ID());
+            var q = db.Queryable<WHLocation>();
+            if (query.IsNotEmpty())
+                q.Where(o => o.PRD_LOC.Contains(query) || o.NAME.Contains(query));
+
+            var result = new ApiQueryDataResponse();
+            if (page != null)
+                result.items = q.ToPageList(page.Value, limit.Value);
+            else
+                result.items = q.ToList();
+
+            result.total = q.Count();
+            return result;
+        }
+
+
+        
 
         [HttpGet]
         public ApiQueryDataResponse SearchSalm(string query, int? page, int? limit)
         {
             var db = Entity.GetDb(GetDB_ON_X_LOGIN_ID());
-            var q = db.SqlQueryable<Salm>(@"select row_number() over( order by SAL_NO) Id ,t.SAL_NO, t.NAME,
+            var q = db.SqlQueryable<Salm>(@"select row_number() over( order by SAL_NO) Id ,
+                                    t.SAL_NO, t.NAME, t.DEP,
                                     -1 CreateId, getdate() CreateDD,
                                     -1 UpdateId, getdate() UpdateDD
                                     from Salm t");

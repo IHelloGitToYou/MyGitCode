@@ -45,5 +45,31 @@ namespace Ground.Controllers
 
             return service.GetNewOSNo(Day, SOFormat);
         }
+
+
+        /// <summary>
+        /// 取员工的部门
+        /// </summary>
+        /// <param name="SalNo"></param>
+        [HttpGet]
+        public Dept GetUserDept(string SalNo)
+        {
+            var db = Entity.GetDb(GetDB_ON_X_LOGIN_ID());
+            var q = db.SqlQueryable<Salm>(@"select row_number() over( order by SAL_NO) Id ,
+                                    t.SAL_NO, t.NAME, t.DEP,
+                                    -1 CreateId, getdate() CreateDD,
+                                    -1 UpdateId, getdate() UpdateDD
+                                    from Salm t");
+
+            var salm = q.Where(o => o.SAL_NO == SalNo).First();
+            if (salm == null || salm.DEP.IsNullOrEmpty())
+                return null;
+
+            var q2 = db.SqlQueryable<Dept>(@"select row_number() over( order by DEP) Id ,t.DEP, t.NAME,
+                                    -1 CreateId, getdate() CreateDD,
+                                    -1 UpdateId, getdate() UpdateDD
+                                    from Dept t");
+            return q2.Where(o => o.DEP == salm.DEP).First();
+        }
     }
 }

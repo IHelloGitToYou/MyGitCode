@@ -38,6 +38,50 @@
             }
         });
 
+        //切换客户带立帐\扣税方式
+        var boxCusNo = Ext.ComponentQuery.query('field[name=CUS_NO]', form)[0];
+        boxCusNo.boxTaxId = Ext.ComponentQuery.query('field[name=TAX_ID]', form)[0];
+        boxCusNo.boxZhangId = Ext.ComponentQuery.query('field[name=ZHANG_ID]', form)[0];
+        
+        form.mon(boxCusNo, 'change', function (vthis, newValue, oldValue, eOpts) {
+            if (!newValue) return;
+
+            var custBoxStore = vthis.store,
+                editorRecord = custBoxStore.findRecord(vthis.valueField, newValue);
+            if (!editorRecord) return;
+
+            vthis.boxTaxId.setValue(editorRecord.get('ID1_TAX'));
+            vthis.boxZhangId.setValue(editorRecord.get('CLS2'));
+        });
+
+
+        var boxSalNo = Ext.ComponentQuery.query('field[name=SAL_NO]', form)[0];
+        var boxDEP = Ext.ComponentQuery.query('field[name=PO_DEP]', form)[0];
+        //业务员变了,更新所属部门
+        if (Gao.AllTable.DepNoForm == 'SALM') {
+            boxSalNo.boxDEP = boxDEP;
+            form.mon(boxSalNo, 'change', function (vthis, newValue, oldValue, eOpts) {
+                if (!newValue) return;
+
+                RequestX.RequestGet('SO/GetUserDept', { SalNo: newValue },
+                    function (data2) {
+                        if (!data2) return;
+                        data2.DEP = data2.DEP || '0000';
+                        boxDEP.setValue(data2.DEP);
+                    }, this);
+            });
+        }
+        else {
+            boxDEP.setValue('0000');
+            //RequestX.RequestGet('SO/GetUserDept', { SalNo: 'xx' },
+            //    function (data2) {
+            //        if (!data2) return;
+            //        data2.DEP = data2.DEP || '0000';
+            //        boxDEP.setValue(data2.DEP);
+            //    }, this);
+        }
+
+
         gaoCE.form2 = form;
         gaoCE.mon(gaoCE, 'edit', function (v_editor, v_context, v_eOpt) {
             //console.log('ediitttt');
@@ -49,7 +93,8 @@
                 tax = 0,
                 taxRTO = rec.get('TAX_RTO') || 0;
 
-            if (v_context.field == 'QTY' || v_context.field == 'UP' || v_context.field == 'TAX_RTO') {
+            if (v_context.field == 'FREE_ID' || v_context.field == 'QTY'
+                    || v_context.field == 'UP' || v_context.field == 'TAX_RTO') {
                 rec.set('AMTN', amt);
                 rec.set('AMT', amt);
                 rec.set('TAX', 0);
@@ -70,6 +115,14 @@
                     //rec.set('AMTN', net);
                     rec.set('TAX', tax);
                 }
+            }
+
+            //是Free赠品
+            ///console.log(rec.get('FREE_ID'));
+            if (rec.get('FREE_ID') == true || rec.get('FREE_ID') == 'T') {
+                rec.set('AMTN', 0);
+                rec.set('AMT', 0);
+                rec.set('TAX', 0);
             }
 
             this.controller.SetTotalAmtToHead(rec.store, form2);

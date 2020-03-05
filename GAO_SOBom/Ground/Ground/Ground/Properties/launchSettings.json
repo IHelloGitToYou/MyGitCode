@@ -19,11 +19,11 @@
     "Ground": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/values",
+      "launchUrl": "api",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://localhost:50466/"
+      "applicationUrl": "http://localhost:50465/"
     }
   }
 }

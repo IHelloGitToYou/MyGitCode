@@ -121,7 +121,7 @@ Ext.define('ExtGAO.view.so.commands.SOAddCommand', {
                         soData.DetailList.push(rec.data);
                     }
 
-                    soData.SOTableFormat = Gao.SOTableFormat;
+                    soData.SOTableFormat = Gao.SOTable.TableFormat;
                     me.Post(Ext.encode(soData), function (data) {
                         AppTool.ShowOKMsg('添加成功');
 
@@ -145,7 +145,7 @@ Ext.define('ExtGAO.view.so.commands.SOAddCommand', {
     SetNewOSNO: function (form) {
             RequestX.RequestGet('SO/GetNewOSNo', {
                 Day: new Date(),
-                SOFormat: Gao.SOTableFormat
+                SOFormat: Gao.SOTable.TableFormat
             },
             function (data2) {
                 var boxOSNo = Ext.ComponentQuery.query('field[name=OS_NO]', form)[0];

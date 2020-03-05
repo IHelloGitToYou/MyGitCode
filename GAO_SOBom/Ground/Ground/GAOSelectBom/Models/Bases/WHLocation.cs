@@ -6,16 +6,18 @@ using System.Text;
 namespace GAOSelectBom.Models
 {
     [RootEntity]
-    [SqlSugar.SugarTable("SALM")]
-    public class Salm : Entity
+    [SqlSugar.SugarTable("WH_LOC")]
+    public class WHLocation : Entity
     {
-        [Label("员工代码")]
+        [Label("储位代码")]
         [Require]
-        public string SAL_NO { get; set; }
+        public string PRD_LOC { get; set; }
+
         [Label("名称")]
         public string NAME { get; set; }
 
-        [Label("部门代号")]
-        public string DEP { get; set; }
+        [Label("仓库")]
+        [Require]
+        public string WH { get; set; }
     }
 }

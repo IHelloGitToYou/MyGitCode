@@ -2,7 +2,7 @@
   "ConnectionStrings": {
     "CORE": "Data Source=YF3-MOM11\\SERVER2012;database=TbrSystem;uid=sa;pwd=Sa123;" //
   },
-  "ExtjsGeneratePath": "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\ExtGAO\\app\\model",
+  "ExtjsGeneratePath": "G:\\产品开发New\\MyAllGit\\GAO_SOBom\\ExtGAO\\app\\model\\",
   "ERP系统": "T8", //或 "SUNLIKE"
   "帐套数据库连接格式": "Data Source=YF3-MOM11\\SERVER2012;database=DB_{0};uid=sa;pwd=Sa123;" //{0} 用于切换帐号不要去掉
 }
