@@ -9,7 +9,7 @@ namespace GAOSelectBom.Models
     [SqlSugar.SugarTable("SALM")]
     public class Salm : Entity
     {
-        [Label("员工代码")]
+        [Label("员工代码")] 
         [Require]
         public string SAL_NO { get; set; }
         [Label("名称")]

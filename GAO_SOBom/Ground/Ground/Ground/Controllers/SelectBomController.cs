@@ -127,8 +127,6 @@ namespace Ground.Controllers
         }
 
 
-        
-
         [HttpGet]
         public ApiQueryDataResponse SearchSalm(string query, int? page, int? limit)
         {

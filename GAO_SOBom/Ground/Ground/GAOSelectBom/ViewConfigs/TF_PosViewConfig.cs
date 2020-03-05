@@ -49,7 +49,7 @@ namespace GAOSelectBom.ViewConfigs
             Propery(o => o.PRD_LOC).SetComboboxEditor("selectwhloceditor");// todo 储位 控件
 
             Propery(o => o.UP).SetEditorConfig("minValue", 0);
-            //Propery(o => o.UP1).UserGrid(Hidden: true);
+            //Propery(o => o.UP1).UserGrid(Hidden: true); 
 
             Propery(o => o.TAX_RTO);
             Propery(o => o.TAX);

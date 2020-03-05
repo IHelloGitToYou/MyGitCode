@@ -13,7 +13,7 @@ namespace GAOSelectBom.Models
         [Require]
         public string Prd_No { get; set; }
         [Label("名称")]
-        public string Name { get; set; }
+        public string Name { get; set; } 
 
         [Label("简称")]
         public string Snm { get; set; }

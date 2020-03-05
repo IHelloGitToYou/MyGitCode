@@ -66,7 +66,7 @@ namespace GAOSelectBom.Models
         [Label("副数量")]
         [Require]
         public decimal QTY1 { get; set; } = 0.00m;
-        
+         
         [Label("单价")]
         [Require]
         public decimal UP { get; set; } = 0.00m;

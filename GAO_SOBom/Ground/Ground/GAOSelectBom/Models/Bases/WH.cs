@@ -11,7 +11,7 @@ namespace GAOSelectBom.Models
     {
         [Label("仓库代码")]
         [Require]
-        public string WH { get; set; }
+        public string WH { get; set; } 
         [Label("名称")]
         public string NAME { get; set; }
     }

@@ -9,7 +9,7 @@ namespace GAOSelectBom.Models
     [SqlSugar.SugarTable("WH_LOC")]
     public class WHLocation : Entity
     {
-        [Label("储位代码")]
+        [Label("储位代码")] 
         [Require]
         public string PRD_LOC { get; set; }
 

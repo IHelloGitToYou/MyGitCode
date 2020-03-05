@@ -107,7 +107,7 @@ namespace GAOSelectBom.Models
 
         [Label("本币别金额")]
         [SqlSugar.SugarColumn(IsIgnore = true)]
-        public decimal SHOW_AMTN { get; set; } = 0.00m;
+        public decimal SHOW_AMTN { get; set; } = 0.00m; 
 
         [Label("税额")]
         [SqlSugar.SugarColumn(IsIgnore = true)]

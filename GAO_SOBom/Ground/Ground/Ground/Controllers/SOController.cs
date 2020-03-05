@@ -61,7 +61,7 @@ namespace Ground.Controllers
                                     -1 UpdateId, getdate() UpdateDD
                                     from Salm t");
 
-            var salm = q.Where(o => o.SAL_NO == SalNo).First();
+            var salm = q.Where(o => o.SAL_NO == SalNo).First(); 
             if (salm == null || salm.DEP.IsNullOrEmpty())
                 return null;
 
